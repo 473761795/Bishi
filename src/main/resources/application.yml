@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.142.169.95/dabiaoqian?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: dabiaoqian
+    password: 473761795
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 128MB #上传文件总大值
+      max-request-size: 10MB  #单个文件的最大值
+
+  #文件上传操作
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher #解决springboot和swagger2版本冲突
+
+
+server:
+  port: 8671
