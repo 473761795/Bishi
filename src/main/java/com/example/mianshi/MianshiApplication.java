@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.HashMap;
 
-import static com.example.mianshi.tagSeries.test;
+import static com.example.mianshi.TagSeries.test;
 
 
 @SpringBootApplication

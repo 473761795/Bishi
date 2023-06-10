@@ -1,9 +1,12 @@
 package com.example.mianshi.Service;
 
+import com.example.mianshi.Entity.MappingDict;
 import com.example.mianshi.Entity.Product;
 import com.example.mianshi.Mapper.DictMapper;
 import com.example.mianshi.Mapper.ProductsMapper;
+import com.example.mianshi.TagSeries;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,8 +14,8 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import static com.example.mianshi.tagSeries.tagSeries;
+import org.junit.Assert;
+import static com.example.mianshi.TagSeries.tagSeries;
 
 /**
  * 分批查询商品表
@@ -81,4 +84,6 @@ public class TagSeriesService {
             productsMapper.updateProductSeries(product.getProduct_id(), product.getSeries());
         }
     }
+
+
 }

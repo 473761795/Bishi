@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class tagSeries {
+public class TagSeries {
     /**
      * 这里是解答《打标签-系列》问题的
      * 打系列标签方法
@@ -89,8 +89,8 @@ public class tagSeries {
         mappingDict.add(entry3);
 
         // 示例2
-        String brand = "海妖精酿";
-        String productName = "海妖精酿啤酒瓶装比利时小麦白啤330ml12瓶包邮";
+        String brand = "雪花";
+        String productName = "SNOW雪花纯生啤酒8度500ml*12罐匠心营造易拉罐装整箱黄啤酒 500mL*12瓶";
 
         // 调用打系列标签方法
         String series = tagSeries(brand, productName, mappingDict);
@@ -102,5 +102,6 @@ public class tagSeries {
     public static void main(String[] args) {
         test();
     }
+
 
 }
